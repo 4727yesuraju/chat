@@ -16,7 +16,7 @@ import io from 'socket.io-client'
     useEffect(()=>{
         if(authUser){
             console.log("authuser :",authUser._id);
-            const socket = io('http://localhost:5000',{
+            const socket = io('https://chat-ou2n.onrender.com/',{
                 query : {
                     userId : authUser._id,
                 }
